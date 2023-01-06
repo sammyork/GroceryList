@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(255, 255, 228);
+    text-align: center;
+    font-size: 3vh;
+}
+
+h1 {
+    display: inline-flex; 
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(244, 244, 202);
+    color: rgb(150, 104, 52);
+}
