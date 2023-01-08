@@ -22,3 +22,23 @@ footer {
     background-color: rgb(244, 244, 202);
     color: rgb(150, 104, 52);
 }
+
+@media screen and (min-width: 800px){
+    #input {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    #food {
+        grid-column-start: 2;
+    }
+    #num {
+        grid-column-start: 4;
+    }
+}
+@media screen and (max-width: 799px){
+    #input {
+        display: grid;
+        grid-template-rows: 2;
+        row-gap: 20px;
+    }
+}
