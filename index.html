@@ -11,27 +11,29 @@
 </head>
     <body onload="initialize();">
         <div>
-            <img src="logo.jpg">
+            <img src="logo.jpg" alt="logo image">
             <br>
             <h1>Shop Lift Up, Inc.</h1>
         </div>
-        <div>
-            <label>
-                Item Selection: <input type="text" id="foodsel"/>
-            </label>  
-            <br>
-            <button onclick="addFood();">Add To List</button>
-            <button onclick="deleteFood();">Remove From List </button>
+        <div id="input">
+            <div id="food">
+                <label>
+                    Item Selection: <input type="text" id="foodsel"/>
+                </label>  <br>
+                <button onclick="addFood();">Add To List</button>
+                <button onclick="deleteFood();">Remove From List </button>
+            </div>
+            <div id="num">
+                <label>
+                    Item Number: <input type="number" id="numsel"/>
+                </label><br>
+                <button onclick="move(1);">Move Up</button>
+                <button onclick="move(-1);">Move Down</button>
+            </div>
         </div>
-        <br><br>
+        <br>
         <div>
-            <label>
-                Item Number: <input type="number" id="numsel"/>
-            </label>
-            <br>
-            <button onclick="moveUp();">Move Up</button>
-            <button onclick="moveDown();">Move Down</button>
-            <br><br>
+            <h3>grocery list</h2>
             <div>
                 <div id="outbox"></div>
             </div>
