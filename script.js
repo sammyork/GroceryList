@@ -27,11 +27,16 @@ function deleteFood() {
     }
     display();
 }
-function moveUp() {
-    var n = numbox.value;
-}
-function moveDown() {
-    var n = numbox.value;
+function move(num) {
+    let idx = parseInt(numbox.value);
+    let n2 = idx - num;
+    if(n2 > -1){
+        if(n2 < list.length){
+            list.splice(n2, 0, list.splice(idx, 1)[0]);
+            numbox.value = n2;
+        }
+    }
+    display();
 }
 function indexOf(array, itm){
     for(var i = 0; i < array.length; i++) {
@@ -41,3 +46,4 @@ function indexOf(array, itm){
     }
     return -1
 }
+
