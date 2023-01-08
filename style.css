@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-    display: inline-flex; 
+    margin: 0px;
+    padding:0px;
 }
 
 img {
